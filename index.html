@@ -533,6 +533,17 @@
                         </li>
                     </ul>
                 </div>
+                <form class="footer-send" action="#">
+                    <p class="footer-send-title">подпишитесь на рассылку</p>
+                    <div class="footer-send-fild">
+                        <input class="footer-send-mail" type="email" placeholder="E-mail">
+                        <button class="hero-button">
+                            Подписаться
+                        </button>
+                    </div>
+                    
+
+                </form>
             </div>
         </footer>
         <!-- modalka -->
@@ -543,6 +554,83 @@
                         <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
                 </button>
+                <form action="#" class="modal-form">
+                    <p class="moal-form-head">
+                        Оставьте свои данные, мы вам перезвоним
+                    </p>
+                    <label class="modal-form-field"
+                        >Имя
+                        <span class="modal-form-wrapper">
+                            <input
+                                type="text"
+                                class="modal-form-input"
+                                name="user-name"
+                                minlength="2"
+                                pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                                title="Только буквы кирилици и латиници"
+                            />
+                            <svg class="modal-form-icon">
+                                <use href="./images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-field"
+                        >Телефон
+                        <span class="modal-form-wrapper">
+                            <input
+                                type="tel"
+                                class="modal-form-input"
+                                name="user-phone"
+                                pattern="[0-9]{10}"
+                                title="0671112233"
+                            />
+                            <svg class="modal-form-icon">
+                                <use
+                                    href="./images/sprite.svg#icon-handset"
+                                ></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-field"
+                        >Почта
+                        <span class="modal-form-wrapper">
+                            <input
+                                type="email"
+                                class="modal-form-input"
+                                name="user-mail"
+                            />
+                            <svg class="modal-form-icon">
+                                <use
+                                    href="./images/sprite.svg#icon-mail-black"
+                                ></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-field"
+                        >Комментарий
+                        <textarea
+                            class="modal-form-message"
+                            name="user-message"
+                            placeholder="Введите текст"
+                        ></textarea>
+                    </label>
+                    <div class="modal-form-fild">
+                        
+                        <input name="contract" class="modal-form-checkbox visually-hidden" type="checkbox" id="accept-policy" required>
+                        <span class="modal-form-border">
+                            <svg for="accept-policy" class="modal-form-icon-check">
+                                <use href="./images/sprite.svg#icon-check-blue"></use>
+                            </svg>
+                        </span>
+                        <label for="accept-policy" class="modal-form-checkbox-label">
+                           
+                                Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                        </label>
+                    </div>
+                    <button class="contact-form-button" type="submit">
+                        Отправить
+                    </button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
