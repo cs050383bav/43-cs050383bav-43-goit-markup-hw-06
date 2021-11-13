@@ -249,8 +249,8 @@ img {
 
 .hero-button:focus,
 .hero-button:hover {
-    color: var(--accent-text-color);
-    background-color: #ffffff;
+    color: ffffff;
+    background-color: #188ce8;
 }
 
 /*-------------------advantage-----------------*/
@@ -590,7 +590,19 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
-.hero-button {
+
+.footer-send-button {
+    display: flex;
+    align-items: center;
+}
+
+.footer-send-name {
+    margin-right: 10px;
+}
+
+.footer-send-telegram {
+    width: 24px;
+    height: 24px;
 }
 
 /*=+=+=+=+=+=+=+=+=+= portfolio =+=+=+=+=+=+=+=+=*/
